@@ -1,0 +1,10 @@
+
+
+/* Link Stylings */
+<style type="text/css">
+a:link {color:#FFF;text-decoration:none;}      /* unvisited link */
+a:visited {color:#FFF;text-decoration:none;}  /* visited link */
+a:hover {color:#0000FF;text-decoration:none;}  /* mouse over link */
+a:active {color:#0000FF;text-decoration:none;}  /* selected link */
+</style>
+
