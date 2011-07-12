@@ -1,4 +1,8 @@
 Tests::Application.routes.draw do
+  resources :users
+
+match '/signup', :to => 'users#new'
+
   #get "pages/page1"
   #get "pages/page2"
   #get "pages/page3"
