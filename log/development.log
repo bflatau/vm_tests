@@ -1569,3 +1569,38 @@ Started GET "/signup" for 127.0.0.1 at Tue Jul 12 15:46:35 -0700 2011
 Rendered shared/_error_messages.html.erb (0.3ms)
 Rendered users/new.html.erb within layouts/application (13.7ms)
 Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jul 12 15:53:45 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (58.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (9.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (6.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (17.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20110712215421')
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20110712214544')[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20110712205106')
+  [1m[36mSQL (52.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20110712183336')[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
