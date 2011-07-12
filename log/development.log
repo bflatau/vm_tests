@@ -1329,3 +1329,243 @@ Migrating to AddSaltToUsers (20110712215421)
 [0m
   [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("users")
   [1m[36mSQL (0.3ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jul 12 15:28:22 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jul 12 15:28:28 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (58.3ms)
+Completed 200 OK in 68ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Jul 12 15:29:24 -0700 2011
+
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Jul 12 15:30:32 -0700 2011
+
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jul 12 15:32:22 -0700 2011
+
+SyntaxError (/home/crashoverride/rails_apps/vm_tests/app/controllers/users_controller.rb:26: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jul 12 15:32:23 -0700 2011
+
+SyntaxError (/home/crashoverride/rails_apps/vm_tests/app/controllers/users_controller.rb:26: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jul 12 15:32:57 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 31ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Jul 12 15:33:39 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"4AfJH5pakXR6yGovLMaE4Esk2+xEi8ElsVbqsMSdAcM=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben@test.com"}}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben@test.com')) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "salt", "updated_at", "created_at", "email", "encrypted_password") VALUES ('ben', 'c6ff1d5a4eb96ed8c2acdf24402de4dbb72fcb97778e8b68ce8f0c2b27defca4', '2011-07-12 22:33:39.411830', '2011-07-12 22:33:39.411830', 'ben@test.com', 'fe6482cc3ff3fe19cbaf306b0828dc379418d1ac478f48c99b3a427732614de8')[0m
+Completed 500 Internal Server Error in 139ms
+
+ActionView::MissingTemplate (Missing template users/create with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :erb, :rhtml, :rxml, :builder]} in view paths "/home/crashoverride/rails_apps/vm_tests/app/views"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Jul 12 15:35:12 -0700 2011
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jul 12 15:35:22 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (Missing partial shared/error_messages with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :erb, :rhtml, :rxml, :builder]} in view paths "/home/crashoverride/rails_apps/vm_tests/app/views"):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <%= render 'shared/error_messages' %>
+    5:   <div class="field">
+    6:     <%= f.label :name %><br />
+    7:     <%= f.text_field :name %>
+  app/views/users/new.html.erb:4:in `_app_views_users_new_html_erb___732050771__617656748_0'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___732050771__617656748_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jul 12 15:35:30 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (Missing partial shared/error_messages with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :erb, :rhtml, :rxml, :builder]} in view paths "/home/crashoverride/rails_apps/vm_tests/app/views"):
+    1: <h1>Sign up</h1>
+    2: 
+    3: <%= form_for(@user) do |f| %>
+    4:   <%= render 'shared/error_messages' %>
+    5:   <div class="field">
+    6:     <%= f.label :name %><br />
+    7:     <%= f.text_field :name %>
+  app/views/users/new.html.erb:4:in `_app_views_users_new_html_erb___732050771__618140578_0'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___732050771__618140578_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jul 12 15:36:46 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Jul 12 15:36:57 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"4AfJH5pakXR6yGovLMaE4Esk2+xEi8ElsVbqsMSdAcM=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben@test.com"}}
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben@test.com')) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 42ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Jul 12 15:37:14 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"4AfJH5pakXR6yGovLMaE4Esk2+xEi8ElsVbqsMSdAcM=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 22ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Jul 12 15:37:29 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"4AfJH5pakXR6yGovLMaE4Esk2+xEi8ElsVbqsMSdAcM=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben@test2.com"}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben@test2.com')) LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "salt", "created_at", "updated_at", "name", "encrypted_password") VALUES ('ben@test2.com', '018af31f3862fc974b7d5415a33c3927f3f07e642470fc058580f202d76be417', '2011-07-12 22:37:30.000756', '2011-07-12 22:37:30.000756', 'ben', '7768bb940f7dde3887f2ec49c421d2acfcf2f5f687f812061fd5162631077515')[0m
+Completed 500 Internal Server Error in 104ms
+
+ActionView::MissingTemplate (Missing template users/create with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:rjs, :erb, :rhtml, :rxml, :builder]} in view paths "/home/crashoverride/rails_apps/vm_tests/app/views"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jul 12 15:37:45 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at Tue Jul 12 15:37:48 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 10ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jul 12 15:42:44 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jul 12 15:42:50 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Jul 12 15:43:13 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"4AfJH5pakXR6yGovLMaE4Esk2+xEi8ElsVbqsMSdAcM=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben@test2.com"}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben@test2.com')) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 19ms (Views: 10.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Jul 12 15:43:19 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"4AfJH5pakXR6yGovLMaE4Esk2+xEi8ElsVbqsMSdAcM=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben@test3.com"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben@test3.com')) LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("created_at", "encrypted_password", "name", "email", "updated_at", "salt") VALUES ('2011-07-12 22:43:19.332343', 'a94285496025ce1e788af22a2fd304f670d7f705619fe74f84f8047384a03be9', 'ben', 'ben@test3.com', '2011-07-12 22:43:19.332343', '7b81994f1d27f7bb3e6c5287e11b71fa9bdd570614227ff60fc579238daec17a')
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 56ms
+
+
+Started GET "/users/3" for 127.0.0.1 at Tue Jul 12 15:43:19 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jul 12 15:46:02 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jul 12 15:46:04 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 52ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jul 12 15:46:26 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jul 12 15:46:35 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.0ms)
