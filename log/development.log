@@ -1604,3 +1604,37 @@ Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jul 12 16:45:24 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Tue Jul 12 16:45:27 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 25ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Jul 12 16:45:39 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"zJlO8wUIfNe2G/7ZYCokq0F5QDMe6+a+1p2fnKmqyD4=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben@test.com"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben@test.com')) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "salt", "encrypted_password", "name", "updated_at") VALUES ('2011-07-12 23:45:40.013246', 'ben@test.com', 'ae1fefee8ef989933864eb321df760ed72b9b12bd0bafc81f9d710156e5d095d', 'fe248b0a827112471b4871f56733239096c488fb82b1b4b773e4bde9e0f26d66', 'ben', '2011-07-12 23:45:40.013246')[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 46ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Jul 12 16:45:40 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (9.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 49ms (Views: 33.9ms | ActiveRecord: 9.9ms)
