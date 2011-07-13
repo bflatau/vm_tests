@@ -13,6 +13,7 @@ class SessionsController < ApplicationController
     else
       sign_in user
       redirect_to user
+      #redirect_to page2_path #changes sign-in path to page2
     end
   end
 

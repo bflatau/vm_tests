@@ -2288,3 +2288,706 @@ Started GET "/signup" for 127.0.0.1 at Wed Jul 13 14:10:51 -0700 2011
 Rendered shared/_error_messages.html.erb (0.3ms)
 Rendered users/new.html.erb within layouts/application (9.3ms)
 Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:33:45 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jul 13 14:33:47 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jul 13 14:33:52 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"ben@test.com"}, "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ben@test.com' LIMIT 1[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 12ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 14:33:52 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `logo' for #<#<Class:0xb67375b0>:0xb6735044>):
+    1: <header>
+    2:   <%= link_to logo, root_path %>
+    3:   <nav class="round">
+    4:     <ul>
+    5:       <li><%= link_to "Home", root_path %></li>
+  app/views/users/show.html.erb:2:in `_app_views_users_show_html_erb___895355713__616984668_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 14:34:55 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/top-image" for 127.0.0.1 at Wed Jul 13 14:34:55 -0700 2011
+
+ActionController::RoutingError (No route matches "/images/top-image"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:34:57 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 14:35:28 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 45ms (Views: 12.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 14:36:28 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at Wed Jul 13 14:36:44 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 14ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at Wed Jul 13 14:36:48 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 404 Not Found in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=3):
+  app/controllers/users_controller.rb:4:in `show'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at Wed Jul 13 14:36:52 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 14:39:00 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 14:39:01 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 17ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:43:17 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 32ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jul 13 14:43:21 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jul 13 14:43:27 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"ben@test.com"}, "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'ben@test.com' LIMIT 1
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 9ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 14:43:27 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 18ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signout" for 127.0.0.1 at Wed Jul 13 14:43:30 -0700 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:43:30 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 14:43:41 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (1.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:45:49 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jul 13 14:45:55 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:46:56 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jul 13 14:46:58 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jul 13 14:47:03 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"ben@test.com"}, "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'ben@test.com' LIMIT 1
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 8ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 14:47:03 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 17ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:49:47 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jul 13 14:49:48 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jul 13 14:49:54 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"ben@test.com"}, "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ben@test.com' LIMIT 1[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 57ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 14:49:54 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 15ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signout" for 127.0.0.1 at Wed Jul 13 14:50:36 -0700 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:50:36 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jul 13 14:50:38 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jul 13 14:50:42 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"ben@test.com"}, "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'ben@test.com' LIMIT 1
+Completed 500 Internal Server Error in 25ms
+
+NameError (undefined local variable or method `page2' for #<SessionsController:0xb65542c0>):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jul 13 14:53:48 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"ben@test.com"}, "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ben@test.com' LIMIT 1[0m
+Redirected to http://localhost:3000/page2
+Completed 302 Found in 23ms
+
+
+Started GET "/page2" for 127.0.0.1 at Wed Jul 13 14:53:48 -0700 2011
+  Processing by PagesController#page2 as HTML
+Rendered pages/page2.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blueprint/plugins/fancy-type/screen.css" for 127.0.0.1 at Wed Jul 13 14:53:48 -0700 2011
+
+ActionController::RoutingError (No route matches "/blueprint/plugins/fancy-type/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/test.jpg" for 127.0.0.1 at Wed Jul 13 14:53:48 -0700 2011
+
+ActionController::RoutingError (No route matches "/test.jpg"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/valid.png" for 127.0.0.1 at Wed Jul 13 14:53:48 -0700 2011
+
+ActionController::RoutingError (No route matches "/valid.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:53:51 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jul 13 14:53:57 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jul 13 14:54:04 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"ben@test.com"}, "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'ben@test.com' LIMIT 1
+Redirected to http://localhost:3000/page2
+Completed 302 Found in 10ms
+
+
+Started GET "/page2" for 127.0.0.1 at Wed Jul 13 14:54:04 -0700 2011
+  Processing by PagesController#page2 as HTML
+Rendered pages/page2.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/test.jpg" for 127.0.0.1 at Wed Jul 13 14:54:04 -0700 2011
+
+ActionController::RoutingError (No route matches "/test.jpg"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/valid.png" for 127.0.0.1 at Wed Jul 13 14:54:04 -0700 2011
+
+ActionController::RoutingError (No route matches "/valid.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/blueprint/plugins/fancy-type/screen.css" for 127.0.0.1 at Wed Jul 13 14:54:04 -0700 2011
+
+ActionController::RoutingError (No route matches "/blueprint/plugins/fancy-type/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:54:12 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jul 13 14:54:13 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:54:17 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page2" for 127.0.0.1 at Wed Jul 13 14:54:22 -0700 2011
+  Processing by PagesController#page2 as HTML
+Rendered pages/page2.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blueprint/plugins/fancy-type/screen.css" for 127.0.0.1 at Wed Jul 13 14:54:22 -0700 2011
+
+ActionController::RoutingError (No route matches "/blueprint/plugins/fancy-type/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/test.jpg" for 127.0.0.1 at Wed Jul 13 14:54:23 -0700 2011
+
+ActionController::RoutingError (No route matches "/test.jpg"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/valid.png" for 127.0.0.1 at Wed Jul 13 14:54:23 -0700 2011
+
+ActionController::RoutingError (No route matches "/valid.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/user/2" for 127.0.0.1 at Wed Jul 13 14:56:55 -0700 2011
+
+ActionController::RoutingError (No route matches "/user/2"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at Wed Jul 13 14:57:02 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 18ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 14:57:06 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 17ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signout" for 127.0.0.1 at Wed Jul 13 14:58:54 -0700 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 14:58:54 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jul 13 14:58:56 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 14ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jul 13 14:59:08 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben@test3.com"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben@test3.com')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (2.7ms)
+Rendered users/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 29ms (Views: 12.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jul 13 14:59:14 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben@test4.com"}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben@test4.com')) LIMIT 1
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "users" ("updated_at", "salt", "name", "email", "created_at", "encrypted_password") VALUES ('2011-07-13 21:59:14.928687', 'b4e9ba7a2e23c58c8b0d75c12ab99d09df2a5de0ac064f45d5c4abf4e7329eee', 'ben', 'ben@test4.com', '2011-07-13 21:59:14.928687', '378717a6097b463fcbcf7507885b0a8a644aa497c9d22c2256784fd633506259')[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 21ms
+
+
+Started GET "/users/3" for 127.0.0.1 at Wed Jul 13 14:59:14 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/signout" for 127.0.0.1 at Wed Jul 13 15:02:39 -0700 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 15:02:39 -0700 2011
+  Processing by PagesController#page1 as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (14.9ms)
+Rendered pages/page1.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined local variable or method `help_path' for #<#<Class:0xb667a488>:0xb667968c>):
+    6:       <% if signed_in? %>
+    7:       <li><%= link_to "Profile", current_user %></li>
+    8:       <% end %>
+    9:       <li><%= link_to "Help", help_path %></li>
+    10:       <% if signed_in? %>
+    11:       <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+    12:       <% else %>
+  app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb__703038037__617392018_276576'
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___1053580778__617365788_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 15:03:21 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jul 13 15:03:23 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jul 13 15:03:28 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"ben@test.com"}, "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ben@test.com' LIMIT 1[0m
+Redirected to http://localhost:3000/page2
+Completed 302 Found in 8ms
+
+
+Started GET "/page2" for 127.0.0.1 at Wed Jul 13 15:03:28 -0700 2011
+  Processing by PagesController#page2 as HTML
+Rendered pages/page2.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/test.jpg" for 127.0.0.1 at Wed Jul 13 15:03:29 -0700 2011
+
+ActionController::RoutingError (No route matches "/test.jpg"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/blueprint/plugins/fancy-type/screen.css" for 127.0.0.1 at Wed Jul 13 15:03:29 -0700 2011
+
+ActionController::RoutingError (No route matches "/blueprint/plugins/fancy-type/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/valid.png" for 127.0.0.1 at Wed Jul 13 15:03:29 -0700 2011
+
+ActionController::RoutingError (No route matches "/valid.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jul 13 15:03:33 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Jul 13 15:03:47 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben@test5.com"}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben@test5.com')) LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "name", "encrypted_password", "salt", "email") VALUES ('2011-07-13 22:03:47.992232', '2011-07-13 22:03:47.992232', 'ben', 'c2a3ee850bc76fbe6a4ae31767d812e76ccf3c17b79374baf860d12510b23f9a', '8fde8ff99b3a00f629995f3506a7f440075ebc7f647a38135955ae1dde80b3a4', 'ben@test5.com')[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 19ms
+
+
+Started GET "/users/4" for 127.0.0.1 at Wed Jul 13 15:03:48 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/signout" for 127.0.0.1 at Wed Jul 13 15:03:49 -0700 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 15:03:49 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jul 13 15:11:21 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jul 13 15:11:29 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"ben@test.com"}, "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'ben@test.com' LIMIT 1
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 10ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 15:11:29 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 50ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 15:11:31 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 15ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 15:11:32 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 15:11:32 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 15:11:36 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 48ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jul 13 15:11:37 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Wed Jul 13 15:29:09 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jul 13 15:29:13 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 16ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Wed Jul 13 15:29:21 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"ben@test.com"}, "authenticity_token"=>"khmXIJVFWD7IvHncsu03w/4WQSgKc6KRU88Ponx73mQ=", "utf8"=>"✓"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ben@test.com' LIMIT 1[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 10ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Wed Jul 13 15:29:21 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 53ms (Views: 12.4ms | ActiveRecord: 0.2ms)
