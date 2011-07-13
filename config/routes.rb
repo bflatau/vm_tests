@@ -1,7 +1,9 @@
 Tests::Application.routes.draw do
-  resources :users
+  #get "sessions/new"
 
-match '/signup', :to => 'users#new'
+  resources :users
+  resources :sessions, :only => [:new, :create, :destroy]	
+
 
   #get "pages/page1"
   #get "pages/page2"
@@ -10,6 +12,10 @@ match '/signup', :to => 'users#new'
 match '/page1', :to => 'pages#page1'
 match '/page2', :to => 'pages#page2'
 match '/page3', :to => 'pages#page3'
+
+match '/signup', :to => 'users#new'
+match '/signin', :to => 'sessions#new'
+match '/signout', :to => 'sessions#destroy'
 
 root :to => 'pages#page1'
 
