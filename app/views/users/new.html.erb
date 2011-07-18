@@ -1,24 +1,134 @@
-<h1>Sign up</h1>
+
+<style type="text/css">
+a:link {color:#FFF;text-decoration:none;}      /* unvisited link */
+a:visited {color:#FFF;text-decoration:none;}  /* visited link */
+a:hover {color:#0000FF;text-decoration:none;}  /* mouse over link */
+a:active {color:#0000FF;text-decoration:none;}  /* selected link */
+</style>
+
+
+<body>
+<div class="container header">
+  <div id="header" class="span-24">
+  </div>
+</div>
+
+ <div class="container showgrid">
+    <div class="span-24 last">
+    <p>
+    </p>
+    </div>
+
+<!-- ......................................Intro Text..................... -->
+
+<div class="span-24 last">
+        <span style="font-size:16px;"><b>&nbsp; Sign Up:</b></span>
+        <span style="font-size:13px;"><b>It's Easy!</b></span>
+        </div>
+
+<div class="span-24 last">
+<p>
+</p>
+</div>
+
+
+<!-- ......................... End Intro Text Start Links..................... -->
+
+
+<div class="box span-24 last">
+        <span style="font-size:12px;">
+	<font color='#fff'><b>&nbsp;
+        <a href="page1">Home</a>&nbsp;|&nbsp;<a href="#">Contact</a>&nbsp;|&nbsp;<a href="#">Donate</a>
+	</b>
+	</font>
+	</span>
+
+ <div class="span-19"> <!-- adjusts link bar location --> 
+       <P>
+	</P>
+       </div>
+</div>
+
+
+
+<!-- .............................. End Top Links..................... -->
+
+
+
+
+
+
+<div class="span-24 last">
+<p>
+</p>
+</div>
+
+<div class="span-1">
+<p>
+</p>
+</div>
+
+<div class="span-12">
 
 <%= form_for(@user) do |f| %>
   <%= render 'shared/error_messages' %>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <div class="field">
+   <%= f.label :name %><br />
+   <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+   <%= f.label :email %><br />
+   <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
+   <%= f.label :password %><br />
+   <%= f.password_field :password %>
   </div>
   <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br />
-    <%= f.password_field :password_confirmation %>
+  <%= f.label :password_confirmation, "Confirmation" %><br />
+  <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+  <%= f.submit "Sign Up" %>
   </div>
+
+
+</div>
+
+<div class="span-9 last">
+<p>
+image goes here image goes here image goes here image goes here image goes here image goes here image goes here image goes here image goes here image goes here
+image goes here image goes here image goes here image goes here image goes here image goes here image goes here image goes here image goes here image goes here
+image goes here image goes here image goes here image goes here image goes here image goes here image goes here image goes here image goes here image goes here
+</p>
+
+</div>
+
+
+
+
+
+<div class="span-24 last">
+<p>
+</p>
+</div>
+
+
+
+
+<!-- .....................footer.................................... -->
+   <div class="box span-24 last">
+        <span style="font-size:12px;">
+	<font color='#fff'><b>&nbsp;
+        <a href="page2">About</a>&nbsp;|&nbsp;<a href="#">Contact</a>&nbsp;|&nbsp;<a href="#">Donate</a>
+	</b>
+	</font>
+	</span>
+
+ <div class="span-19"> <!-- adjusts link bar location --> 
+       <P>
+	</P>
+       </div>
+
+	
 <% end %>

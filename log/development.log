@@ -3022,3 +3022,957 @@ Started GET "/" for 127.0.0.1 at Thu Jul 14 10:06:19 -0700 2011
   Processing by PagesController#page1 as HTML
 Rendered pages/page1.html.erb within layouts/application (1.3ms)
 Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jul 18 13:34:35 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 13:34:37 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:34:40 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.4ms)
+Rendered users/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 24ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:36:42 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:37:05 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 17ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:37:11 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 28ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:38:17 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 66ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:39:02 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 17ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:40:19 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 16ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:40:39 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:42:11 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:42:17 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:42:47 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:43:07 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:43:08 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:43:49 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:44:36 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 35ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:49:22 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 19ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:50:07 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:50:08 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 49ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:50:38 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 17ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:50:39 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:51:53 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:52:25 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 15ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:52:26 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:52:34 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.2ms)
+Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:52:35 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:52:55 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:55:15 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 19ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:56:11 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 48ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:56:50 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:57:15 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 24ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:58:46 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 50ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 13:59:11 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:00:09 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:00:28 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.2ms)
+Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:00:51 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 17ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:02:17 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:03:00 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:03:24 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:03:43 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page2" for 127.0.0.1 at Mon Jul 18 14:06:24 -0700 2011
+  Processing by PagesController#page2 as HTML
+Rendered pages/page2.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blueprint/plugins/fancy-type/screen.css" for 127.0.0.1 at Mon Jul 18 14:06:24 -0700 2011
+
+ActionController::RoutingError (No route matches "/blueprint/plugins/fancy-type/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/test.jpg" for 127.0.0.1 at Mon Jul 18 14:06:24 -0700 2011
+
+ActionController::RoutingError (No route matches "/test.jpg"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/valid.png" for 127.0.0.1 at Mon Jul 18 14:06:24 -0700 2011
+
+ActionController::RoutingError (No route matches "/valid.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/page2" for 127.0.0.1 at Mon Jul 18 14:06:29 -0700 2011
+  Processing by PagesController#page2 as HTML
+Rendered pages/page2.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test.jpg" for 127.0.0.1 at Mon Jul 18 14:06:29 -0700 2011
+
+ActionController::RoutingError (No route matches "/test.jpg"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/blueprint/plugins/fancy-type/screen.css" for 127.0.0.1 at Mon Jul 18 14:06:29 -0700 2011
+
+ActionController::RoutingError (No route matches "/blueprint/plugins/fancy-type/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/valid.png" for 127.0.0.1 at Mon Jul 18 14:06:29 -0700 2011
+
+ActionController::RoutingError (No route matches "/valid.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jul 18 14:07:32 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:08:41 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:09:33 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.2ms)
+Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:09:47 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:09:49 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:13:10 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:13:39 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 54ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:14:04 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 20ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:14:52 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:14:53 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 45ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:15:55 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 32ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:16:14 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:16:56 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:17:29 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 14ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:17:39 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:18:19 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:18:47 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:19:24 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/root" for 127.0.0.1 at Mon Jul 18 14:19:25 -0700 2011
+
+ActionController::RoutingError (No route matches "/root"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:22:50 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 19ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 14:22:51 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:22:54 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 14ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 14:22:55 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 14:22:57 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:23:00 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 15ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 14:23:53 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page2" for 127.0.0.1 at Mon Jul 18 14:24:05 -0700 2011
+  Processing by PagesController#page2 as HTML
+Rendered pages/page2.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blueprint/plugins/fancy-type/screen.css" for 127.0.0.1 at Mon Jul 18 14:24:05 -0700 2011
+
+ActionController::RoutingError (No route matches "/blueprint/plugins/fancy-type/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/test.jpg" for 127.0.0.1 at Mon Jul 18 14:24:05 -0700 2011
+
+ActionController::RoutingError (No route matches "/test.jpg"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/valid.png" for 127.0.0.1 at Mon Jul 18 14:24:05 -0700 2011
+
+ActionController::RoutingError (No route matches "/valid.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:24:50 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:26:42 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:35:26 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:36:12 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:36:29 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 20ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 14:36:36 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:36:40 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:36:55 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"asdf"}}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('asdf')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.8ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 47ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:37:22 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"asdf"}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('asdf')) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 101ms (Views: 12.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 14:37:25 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:37:26 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 17ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:37:29 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (3.3ms)
+Rendered users/new.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 62ms (Views: 41.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:45:44 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:45:47 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (3.6ms)
+Rendered users/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 40ms (Views: 13.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:46:08 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"asdf"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('asdf')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 61ms (Views: 51.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:47:05 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"asdf"}}
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('asdf')) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 30ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 14:47:07 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:47:08 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:47:17 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 22ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:47:37 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.6ms)
+Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 24ms (Views: 13.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:47:49 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 25ms (Views: 14.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:48:25 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.6ms)
+Rendered users/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 25ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:49:22 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 25ms (Views: 12.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:49:42 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 58ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:49:49 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"asdf"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('asdf')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 24ms (Views: 10.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:51:34 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"asdf"}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('asdf')) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.0ms)
+Rendered users/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 24ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 14:52:37 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 35ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 14:52:38 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 30ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:52:50 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 25ms (Views: 14.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:53:40 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.5ms)
+Rendered users/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 34ms (Views: 14.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:54:33 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.9ms)
+Rendered users/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 28ms (Views: 12.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:57:17 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 27ms (Views: 12.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:57:23 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.7ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 66ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:57:52 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (1.9ms)
+Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 29ms (Views: 8.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:58:15 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.6ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 34ms (Views: 14.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:58:37 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (2.1ms)
+Rendered users/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 29ms (Views: 16.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 14:59:47 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (1.6ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 26ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 15:19:31 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (2.1ms)
+Rendered users/new.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 77ms (Views: 59.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 15:19:54 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (2.0ms)
+Rendered users/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 25ms (Views: 12.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 15:37:33 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"asdf", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (2.3ms)
+Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 29ms (Views: 14.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 15:39:13 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben@test6.com"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben@test6.com')) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "email", "name", "salt", "encrypted_password") VALUES ('2011-07-18 22:39:13.543393', '2011-07-18 22:39:13.543393', 'ben@test6.com', 'ben', '627da860f4caba86a5f6436805e4ce8b6920a3cfcca989c1126f096b5dba01cc', 'f2fc3aa7ce630567ba1cda70ba69e5544b1a174e911b0a8cd016c98153abc8be')[0m
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 90ms
+
+
+Started GET "/users/5" for 127.0.0.1 at Mon Jul 18 15:39:13 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 34ms (Views: 18.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at Mon Jul 18 15:39:21 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 34ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signout" for 127.0.0.1 at Mon Jul 18 15:39:23 -0700 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Jul 18 15:39:23 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 15:39:28 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 15:40:14 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 15:40:32 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 27ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 15:40:43 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1
+Rendered shared/_error_messages.html.erb (2.3ms)
+Rendered users/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 60ms (Views: 9.5ms | ActiveRecord: 0.1ms)
