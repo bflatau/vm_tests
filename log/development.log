@@ -3976,3 +3976,434 @@ Started POST "/users" for 127.0.0.1 at Mon Jul 18 15:40:43 -0700 2011
 Rendered shared/_error_messages.html.erb (2.3ms)
 Rendered users/new.html.erb within layouts/application (7.2ms)
 Completed 200 OK in 60ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:21:46 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:21:51 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:34:03 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:34:40 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:34:45 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:34:47 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:35:31 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:35:45 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:36:06 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:36:08 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:36:26 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 16ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:37:13 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:39:20 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:39:36 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:39:38 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:40:17 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:41:09 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jul 18 16:41:16 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>""}, "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jul 18 16:41:18 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>""}, "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1
+Rendered sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jul 18 16:41:19 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>""}, "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jul 18 16:41:20 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>""}, "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1
+Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 30ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:43:20 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:43:21 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:43:23 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page2" for 127.0.0.1 at Mon Jul 18 16:43:27 -0700 2011
+  Processing by PagesController#page2 as HTML
+Rendered pages/page2.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blueprint/plugins/fancy-type/screen.css" for 127.0.0.1 at Mon Jul 18 16:43:27 -0700 2011
+
+ActionController::RoutingError (No route matches "/blueprint/plugins/fancy-type/screen.css"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/test.jpg" for 127.0.0.1 at Mon Jul 18 16:43:27 -0700 2011
+
+ActionController::RoutingError (No route matches "/test.jpg"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/valid.png" for 127.0.0.1 at Mon Jul 18 16:43:27 -0700 2011
+
+ActionController::RoutingError (No route matches "/valid.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:44:00 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:48:30 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 16:50:11 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 16:51:20 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:53:00 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:56:07 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:56:30 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:56:42 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:57:02 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:57:26 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:57:42 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 16:58:59 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:03:36 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:03:52 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:04:24 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:04:46 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:04:59 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:05:19 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:05:35 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:07:17 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 17:08:11 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:08:29 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 17:08:30 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 17ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:08:37 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 17:08:42 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:08:43 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 17:08:44 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 16ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page1" for 127.0.0.1 at Mon Jul 18 17:08:46 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 17:08:51 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.2ms)
+Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 15ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jul 18 17:10:14 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Jul 18 17:10:16 -0700 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Mon Jul 18 17:10:26 -0700 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"ben@test.com"}, "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓"}
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'ben@test.com' LIMIT 1
+Rendered sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 49ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Jul 18 17:10:31 -0700 2011
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.3ms)
+Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 39ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Jul 18 17:10:44 -0700 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign Up", "authenticity_token"=>"LQaFnLHyDseIpjJqYBdBPFpAo10yAOy1uhBSHK2QLjs=", "utf8"=>"✓", "user"=>{"name"=>"ben", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ben@test.com"}}
+  [1m[36mSQL (3.2ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('ben@test.com')) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "email", "updated_at") VALUES ('ben', 'af12c71408a1e4a5184ace96aaef121897d68832f435bc83b6532a02e347c248', '919c4f8aeb99f7084c2be7d6f3969705459fae31e5271c41aa339e37f04169b1', '2011-07-19 00:10:44.238702', 'ben@test.com', '2011-07-19 00:10:44.238702')
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 29ms
+
+
+Started GET "/users/6" for 127.0.0.1 at Mon Jul 18 17:10:44 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1
+Rendered users/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at Mon Jul 18 17:10:48 -0700 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1
+Rendered users/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 20ms (Views: 13.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signout" for 127.0.0.1 at Mon Jul 18 17:10:51 -0700 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Jul 18 17:10:51 -0700 2011
+  Processing by PagesController#page1 as HTML
+Rendered pages/page1.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
